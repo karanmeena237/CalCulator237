@@ -1,0 +1,2 @@
+# CalCulator237
+This is a small project in js and I got to understand many things like I have to face some issues regarding handling events doing the container part for css and handling click even with data values and I also faced many issues while coding this this led me to spend couple of hours to understand it thoroughly, it's better to learn while code with projects rather than learning and learning only not making projects or anything
