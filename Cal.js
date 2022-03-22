@@ -12,8 +12,8 @@ function isOperator(value){
 for (var i = 0; i < button.length; i++) {
     button[i].addEventListener('click', function () {
 
-        var value = this.getAttribute('data-value');
-        var text = display.textContent.trim();
+        var value = this.getAttribute('data-value'); //this is taking values if it is operator or operand
+        var text = display.textContent.trim(); //this is showing text on display to be used in parse float
     if(isOperator(value)){
         operator = value;
         operand1 = parseFloat(text);
@@ -38,6 +38,7 @@ for (var i = 0; i < button.length; i++) {
         }
     }
     else if ( value == "="){
+       
         console.log("presssed");
         operand2 = parseFloat(text);
         var result = eval(operand1 + operator + operand2);
@@ -48,6 +49,12 @@ for (var i = 0; i < button.length; i++) {
             operand2 = null;
             operator = null;
         }
+        // if(operand1 == operand2 && operator =='-'){
+        //     display.textContent = '0';
+        //     operand1 = result;
+        //     operand2 = null;
+        //     operator = null;
+        // }
     }
     else{
         display.textContent += value;
